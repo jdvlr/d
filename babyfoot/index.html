@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amène-toi! - Babyfoot Companion</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Amène-toi!</h1>
+        <p>Babyfoot Companion</p>
+    </header>
+    <main class="bento">
+        <section id="add-match" class="tile">
+            <h2>Ajouter une partie</h2>
+            <form id="match-form">
+                <div class="teams">
+                    <div class="team">
+                        <h3>Équipe 1</h3>
+                        <select id="p1" required></select>
+                        <select id="p2" required></select>
+                        <input type="number" id="score1" min="0" max="10" placeholder="Score" required />
+                    </div>
+                    <div class="team">
+                        <h3>Équipe 2</h3>
+                        <select id="p3" required></select>
+                        <select id="p4" required></select>
+                        <input type="number" id="score2" min="0" max="10" placeholder="Score" required />
+                    </div>
+                </div>
+                <button type="submit">Enregistrer</button>
+            </form>
+        </section>
+        <section id="rankings" class="tile">
+            <h2>Classements</h2>
+            <div class="tabs">
+                <button data-range="day" class="active">Jour</button>
+                <button data-range="week">Semaine</button>
+                <button data-range="month">Mois</button>
+            </div>
+            <ul id="ranking-list"></ul>
+        </section>
+        <section id="stats" class="tile">
+            <h2>Statistiques</h2>
+            <div id="players"></div>
+        </section>
+        <section id="history" class="tile">
+            <h2>Historique</h2>
+            <ul id="history-list"></ul>
+        </section>
+    </main>
+    <footer>
+        <button id="add-player-btn">Ajouter un joueur</button>
+    </footer>
+
+    <div id="player-modal" class="modal hidden">
+        <form id="player-form" class="modal-content">
+            <h3>Nouveau joueur</h3>
+            <input type="text" id="player-name" placeholder="Pseudo" required />
+            <input type="url" id="player-avatar" placeholder="URL de l'avatar" />
+            <div class="actions">
+                <button type="submit">Ajouter</button>
+                <button type="button" id="close-modal">Annuler</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
