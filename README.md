@@ -1,16 +1,24 @@
-# GitHub Pages
+# Amène-toi !
 
-<img src="https://octodex.github.com/images/Professortocat_v2.png" align="right" height="200px" />
+Babyfoot Companion est une petite application web permettant de gérer les scores de babyfoot entre amis ou collègues. Tout se fait localement via `localStorage` pour que l'application puisse être hébergée gratuitement sur GitHub Pages ou tout autre hébergeur statique.
 
-Hey jdvlr!
+## Lancer en local
 
-Mona here. I'm done preparing your exercise. Hope you enjoy! 💚
+Ouvrez simplement `babyfoot/index.html` dans votre navigateur moderne (Chrome, Firefox…). Aucune dépendance n'est nécessaire.
 
-Remember, it's self-paced so feel free to take a break! ☕️
+## Fonctionnalités
 
-[![](https://img.shields.io/badge/Go%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/jdvlr/d/issues/1)
+- Gestion des profils joueurs (pseudo, avatar)
+- Ajout rapide des scores pour des parties 2 contre 2
+- Classement dynamique (jour, semaine, mois)
+- Statistiques par joueur (victoires, défaites, série en cours)
+- Historique complet des parties
+- Interface réactive au design de type Bento
 
----
+## Déploiement sur GitHub Pages
 
-&copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+1. Forkez ce dépôt ou copiez le dossier `babyfoot` dans votre propre répertoire GitHub.
+2. Activez GitHub Pages dans les paramètres du dépôt en choisissant la branche et le dossier racine (par exemple `/babyfoot`).
+3. Accédez à l'URL générée par GitHub pour utiliser l'application.
 
+Bon jeu !
